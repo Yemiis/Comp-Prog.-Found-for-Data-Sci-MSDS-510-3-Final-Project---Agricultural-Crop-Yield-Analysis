@@ -40,7 +40,7 @@ GitHub, NetBeans, MySQL, VirtualBox, Linux (Ubuntu)
 ## 📊 Featured Projects
 
 ### 🌾 Crop Yield Analysis (MSDS 510 Final Project)
-🔗 https://github.com/Yemiis/MSDS510-Agricultural Crop-Yield Analysis-Project  
+🔗 https://github.com/Yemiis/MSDS510-Agricultural-Crop-Yield-Analysis-Project  
 
 - Analyzed 1M+ agricultural records using Python
 - Designed reusable class-based analysis system
