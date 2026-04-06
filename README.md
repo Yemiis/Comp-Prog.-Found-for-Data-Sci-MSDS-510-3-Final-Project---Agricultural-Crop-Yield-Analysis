@@ -5,7 +5,8 @@ MSDS 510 Final Project: Python-based analysis of a large agricultural crop yield
 
 🎓 MS in Artificial Intelligence | Data Science Enthusiast  
 💻 Application Specialist | Python | Data Analysis | OOP  
-📍 United States  
+📍 Meharry Medical College, Nashville TN
+🎓 C/O 2027
 
 ---
 
@@ -61,9 +62,3 @@ GitHub, NetBeans, MySQL, VirtualBox, Linux (Ubuntu)
 
 - LinkedIn: 
 - Email: 
-
----
-
-## ⚡ Fun Fact
-
-I enjoy solving complex problems and turning them into clean, structured solutions.
