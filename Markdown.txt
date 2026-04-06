@@ -1,0 +1,117 @@
+# 🌾 MSDS 510 Final Project – Agricultural Crop Yield Analysis
+
+## 📌 Project Overview
+This project was completed as part of **Comp Prog. Found for Data Sci (MSDS 510-3)**.  
+The goal was to design and implement a Python-based data analysis system that processes a large agricultural dataset and extracts meaningful insights using structured programming concepts.
+
+The project emphasizes:
+- File handling (CSV processing)
+- Data structures (lists and dictionaries)
+- Object-Oriented Programming (OOP)
+- Data analysis using pandas
+- Writing outputs to external files
+
+---
+
+## 👥 Team Members
+- **Opeyemi Omotosho** – MS Artificial Intelligence  
+- **Tommy L. Jones** – MS Data Science  
+
+---
+
+## 📊 Dataset Description
+The dataset contains **1,000,000 simulated agricultural records** with the following variables:
+
+- Region
+- Soil Type
+- Crop Type
+- Rainfall (mm)
+- Temperature (°C)
+- Fertilizer Used (True/False)
+- Irrigation Used (True/False)
+- Weather Condition
+- Days to Harvest
+- Yield (tons per hectare)
+
+---
+
+## ❓ Research Questions
+This project answers the following analytical questions:
+
+1. What is the **average rainfall by region**?
+2. What percentage of **Wheat is grown in the West**?
+3. What percentage of **Barley yields exceed 5 t/ha**?
+4. What is the **average yield by crop type**?
+5. What is the **average yield by region**?
+6. How do **irrigation and fertilizer usage impact yield**?
+7. What is the **correlation between rainfall and crop yield**?
+
+---
+
+## 🧠 Project Design (Object-Oriented Approach)
+
+### 🔹 Class: `CropYieldAnalyzer`
+
+The entire project is built around a central Python class:
+
+#### Properties:
+- `path` → file path to dataset
+- `df` → pandas DataFrame
+- `rows` → list of dictionaries (csv module)
+
+#### Methods:
+- `load_with_pandas()` → loads dataset using pandas
+- `load_with_csv_module()` → loads dataset using csv module
+- `list_variables()` → returns column names
+- `sample_entry()` → returns a sample row
+- `averages()` → computes average values
+- `percentages()` → computes categorical percentages
+- `percentage_numeric_greater()` → calculates threshold-based percentages
+- `write_text_summary()` → exports results to `.txt`
+- `write_csv_summary()` → exports results to `.csv`
+
+This design follows:
+- Encapsulation
+- Modularity
+- Reusability
+- Single-responsibility principle
+
+---
+
+## ⚙️ Methodology
+
+### 1. Data Import
+- Loaded dataset using `pandas.read_csv()`
+- Also processed raw data using `csv.DictReader`
+
+### 2. Data Validation
+- Verified dataset shape: **1,000,000 × 10**
+- Checked for missing values → **0% missing**
+- Checked for duplicates → none found
+
+### 3. Data Analysis Techniques
+- GroupBy operations
+- Aggregations (mean, percentage)
+- Conditional filtering
+- Correlation analysis
+
+### 4. Output Generation
+- Results exported into:
+  - `.txt` (human-readable summary)
+  - `.csv` (structured data output)
+
+---
+
+## 📈 Key Findings
+
+- 🌧️ Rainfall is evenly distributed (~550 mm across regions)
+- 🌾 ~16.67% of crops in the West are Wheat
+- 🌱 ~42.46% of Barley yields exceed 5 t/ha
+- 🌿 Soybean has the highest average yield (~4.65 t/ha)
+- 💧 Irrigation significantly increases yield consistency
+- 🧪 Fertilizer improves average crop yield
+- 🔗 Strong positive correlation between rainfall and yield (~0.76)
+
+---
+
+## 🗂️ Repository Structure
